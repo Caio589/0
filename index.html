@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>ChamaPay | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>💸 ChamaPay</h1>
+</header>
+
+<main>
+  <section class="card">
+    <h3>Nova Cobrança Pix</h3>
+    <input id="valor" type="number" placeholder="Valor (R$)">
+    <button onclick="criarPix()">Gerar Pix</button>
+    <p id="status"></p>
+  </section>
+
+  <section class="card">
+    <h3>Pagamentos</h3>
+    <ul id="lista"></ul>
+  </section>
+
+  <section class="card destaque">
+    <h3>Total Recebido Hoje</h3>
+    <h2 id="total">R$ 0,00</h2>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
